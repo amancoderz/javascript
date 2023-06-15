@@ -1,0 +1,28 @@
+<!-- conditional statement
+if, if else, else if, if else if  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aleart</title>
+</head>
+<body>
+    <input type="number" id="text" value="">
+    <button onclick="sub()">submit</button>
+    <script type="text/javascript">
+        function sub(){
+let a= parseInt(document.getElementById("text").value);
+if(a>18){
+    alert("you are ready for voting");
+}
+else{
+    alert(18-a+ " year is require for voting");
+}
+
+        }
+    </script>
+    
+</body>
+</html>

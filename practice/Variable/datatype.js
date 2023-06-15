@@ -1,5 +1,5 @@
-//premetive datatype
-//nn bb ss u
+// premetive datatype
+// nn bb ss u
 let a= null;
 let b= 123;
 let c= true;

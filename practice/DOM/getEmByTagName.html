@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get elemrnt by tag name</title>
+</head>
+<body>
+    <h2>get Element By tag name</h2>
+    <ul>
+        <li>aman</li>
+        <li>anas</li>
+    </ul>
+    <br>
+    <button onclick="change()">Change</button>
+</body>
+<script type="text/javascript">
+    function change(){
+        // alert("aman")
+        const list = document.getElementsByTagName("ul")[0];
+      const a= list.document.getElementsByTagName("li")[0];
+      const b = list.document.getElementsByTagName("li")[1];
+      alert(a);
+      alert(b);
+    }
+</script>
+</html>

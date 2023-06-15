@@ -1,0 +1,28 @@
+<!-- print marks using object and keys and for loops -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marks print</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+    let marks = {
+        aman: 80,
+        anas: 90,
+        ahad: 95,
+    }
+    //for loops
+    for(let i=0; i<Object.keys(marks).length;i++){
+        document.write("the marks of "+Object.keys(marks)[i]+ " are " + marks[Object.keys(marks)[i]]+"<br>");
+    }
+    // for in loops
+    for(let key in marks){
+        document.write("the marks of "+key+" are "+ marks[key]+"<br>")
+    }
+
+</script>
+</html>

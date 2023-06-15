@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While Loop</title>
+</head>
+<body>
+    <input type="text" id="col"  >
+   <br><br>
+    <button onclick="get()" id="col-but">select</button>
+</body>
+<script type="text/javascript">
+    function get(){
+    let a = document.getElementById("col").value;
+    let i=1;
+    if(a){
+    do{
+        document.write(a+ "<br>");
+        i++
+    }
+    while(i<2);
+}
+else{
+    alert("error");
+}
+    }
+</script>
+</html>

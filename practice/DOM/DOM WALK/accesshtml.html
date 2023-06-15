@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Walking</title>
+</head>
+<style>
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        text-align: center;
+        font-size: 34px;
+        color: rgb(83, 243, 139);
+    }
+    span{
+        color: rgb(61, 101, 187);
+    }
+    
+</style>
+<body>
+    <h1>My name is <span> aman</span></h1>
+    Enter title:
+    <input type="text" id="txt">
+    <br>
+    <button onclick="ttl()">submit</button>
+    <button id="btn" onclick="ch()">change color</button>
+    <button id="btn2" onclick="def()"> restore</button>
+    
+</body>
+<script type="text/javascript">
+    let ch=()=>{
+   document.getElementsByTagName("h1")[0].style.color="red";
+   document.getElementsByTagName("h1")[0].style.background="grey";
+   document.getElementsByTagName("span")[0].style.color="red";
+}  
+
+let def=()=>{
+
+ document.getElementsByTagName("h1")[0].style.color=""; 
+   document.getElementsByTagName("h1")[0].style.background="";
+   document.getElementsByTagName("span")[0].style.color="";
+}
+let ttl=()=>{
+    let ttl = document.getElementById("txt").value; //change title
+    document.title=ttl;
+   console.log(document.firstChild.firstChild)
+}
+   </script>
+</html>

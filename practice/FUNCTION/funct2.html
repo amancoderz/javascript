@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funct</title>
+</head>
+<body>
+    <input type="number" id="1num" placeholder="Enter First Num.">
+    <br><br>
+    <select id="op" style="margin-left: 60px;">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+    </select>
+    <br><br>
+    <input type="number" id="2num" placeholder="Enter second Num.">
+    <br><br>
+    <button onclick="cal()" style="margin-left: 40px;">Calculate</button>
+    <br><br>
+    <div id="txt" style="background-color: lightgreen; height: 40px; width:170px; text-align: center;">
+
+    </div>
+</body>
+<script type="text/javascript">
+function sum(x,y){
+    return x+y;
+}
+function minus(x,y){
+    return x-y;
+}
+function mul(x,y){
+    return x*y;
+}
+function div(x,y){
+    return x/y;
+}
+function cal(){
+let a= parseInt(document.getElementById("1num").value);
+let b= parseInt(document.getElementById("2num").value);
+let op= document.getElementById("op").value;
+switch(op){
+        case '+':
+        document.getElementById("txt").innerHTML=sum(a,b);
+        break;
+        case '-':
+        document.getElementById("txt").innerHTML=minus(a,b);
+        break;
+        case '*':
+        document.getElementById("txt").innerHTML=mul(a,b);
+        break;
+        case '/':
+        document.getElementById("txt").innerHTML=div(a,b);
+        break;    
+}
+document.getElementById("txt").innerHTML=get(a,b);
+}
+</script>
+</html>

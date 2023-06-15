@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+   
+    //delete method in Array
+   let num = [1,2,3,4]; 
+   let num2 = [11,12,13,14];
+    delete num[0];
+    document.write("array after delete:- "+num+"<br>");
+    document.write("array size after delete not changes:- "+num.length+"<br>")
+
+    //concat Array method
+    let newarr = num.concat(num2);
+    document.write("join arr num1 and num2:- "+newarr+"<br><br><br>");
+  
+    {
+        let arr = [2,3,4,5,6,7,8]
+    //splice arr method use to add an element
+    document.write("create new arr:- ",arr+"<br>")
+    arr.splice(0,0,1)
+    document.write("arr splice:- "+arr+"<br> arr new length:- "+arr.length+"<br><br><br>");
+    }
+  {
+      //slice function in array
+      let arr= [2,4,6,8];
+
+       document.write("new array:- " +arr+"<br><br>")
+      document.write("array after slice:- "+arr.slice(1,3)+"<br><br>")
+  }
+
+    //sort Array methods
+   let compare=(a,b)=> {
+    return a-b;
+   }
+{
+        let arr= [12,87,1,8]; //sort alphabetically
+        arr.sort(compare)
+        document.write("sort array:- "+arr,"<br><br><br>");
+        arr.reverse();
+        document.write("reverse array:- "+arr); //reverse function
+}
+  
+
+</script>
+</html>

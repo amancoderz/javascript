@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find text</title>
+</head>
+<style>
+    h2{
+        color: rgb(15, 121, 49);
+        text-align: center;
+    }
+    .main{
+        width: 600px;
+        height: 200px;
+        background-color: aqua;
+        margin-top: 50px;
+        border: solid;
+        border-width: thin;
+    }
+    h2,.main{
+        margin: auto;
+    }
+    .m1{
+        
+        width: 300px;
+        height: 200px;
+        background-color: rgb(237, 191, 134);
+        float: left;
+    }
+    .m2{
+        width: 300px;
+        height: 200px;
+        background-color: rgb(164, 247, 164);
+        float: left;
+    }
+    #txtar{
+        margin-top: 5px;
+        width: 250px;
+        height: 150px;
+
+    }
+    #txtar{
+        padding: 0;
+        margin-left: 25px;
+    }
+    #btn1{
+        margin-left: 125px;
+    }
+.disp{
+    padding: 0;
+    width: 250px;
+    height: 150px;
+    margin-left: 25px;
+    margin-top: 5px;
+    background: #ffffff;
+    border: solid;
+    border-width: thin;
+    text-align: center;
+}
+.find{
+      width: 300px;
+      height: 200px;
+      background: #f46e6e;
+}
+h2,.find{
+    margin: auto;
+}
+#txt{
+    margin-top:25px;
+    margin-left: 65px;
+}
+#btn2{
+    margin-left: 130px;
+    margin-top: 10px;
+}
+.res{
+    width: 200px;
+    height: 50px;
+    background-color: #f7f96e;
+    margin-top: 30px;
+    margin-left: 45px;
+    text-align: center;
+}
+</style>
+<body>
+    <h2>Text-Finder</h2>
+    <div class="main">
+        <div class="m1">
+            <textarea id="txtar">aman</textarea>
+            <button id="btn1" onclick="save()">save</button>
+        </div>
+        <div class="m2">
+            <div class="disp">
+            </div>
+            
+        </div>
+    </div>
+    <div class="find">
+        <input type="text" id="txt">
+        <button onclick="find()" id="btn2">find</button>
+        <div class="res"> </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function save(){
+        let text = document.getElementById("txtar").value;
+        if(text){
+            document.getElementsByClassName("disp")[0].innerText=text;
+        }
+        else{
+            alert("please enter some text")
+        }
+    }
+     function find(){
+        const word = document.getElementById("txt").value;
+    const sent = document.getElementsByClassName("disp")[0].innerText;
+    document.getElementsByClassName("res")[0].innerText =`the word "${word}" ${sent.includes(word)? 'is': 'is not'} in the sentence`
+}
+
+</script>
+</html>

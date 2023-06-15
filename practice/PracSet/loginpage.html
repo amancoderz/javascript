@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <style>
+        *{
+            border: 0;
+        }
+        #tit{
+            text-align: center;
+        }
+         .main{
+            height:50px;
+            width: 304px;
+            color: rgb(17, 216, 90);
+            margin-left: 300px;
+            margin-top: 70px;
+        }
+        input{
+            width: 300px;
+            height: 25px;
+            background-color: rgb(244, 247, 247);
+            }
+            .main, .sub{
+            
+                margin: auto;
+            }
+            #subid{
+                width: 70px;
+                height: 25px;
+                margin-left: 115px;
+             
+            } 
+            #subid:hover{
+                color: white;
+                background-color: rgb(17, 216, 90);
+            }
+            .o1{
+                width: 300px;
+                height: 25px;
+                text-align: center  ;
+                color: rgb(18, 17, 17);
+                background-color: rgb(241, 243, 242);
+            }
+
+    </style>
+    <div class="main">
+        <h2 id="tit">Sign Up --</h2>
+        <div class="main-1">
+             <input type="text" id="fname" placeholder="First Name">
+             <br><hr>
+             <input type="text" id="lname" placeholder="Last Name">
+             <br><hr>
+             <input type="email" id="email" placeholder="Email">
+             <br> <hr>
+             <input type="password" id="pass" placeholder="Enter password">
+             <br><hr>
+             <input type="password" id="con-pass" placeholder="Confirm password">
+            </div>
+            <br><br>
+            <div class="sub">
+            <button onclick="sub()" id="subid" type="submit">Signup</button>
+           </div>  
+           
+           <div class="output">
+            <br><br>
+            <div class="o1" id="dfname"> </div>
+            <hr>
+            <div class="o1" id="dlname"> </div>
+            <hr>
+            <div class="o1" id="demail"> </div>
+            <hr>
+            <div class="o1" id="dpass"> </div>
+            <hr>
+             <div class="o1" id="dcon-pass"> </div>
+             <hr>
+             </div>
+        </div>
+
+</body>
+<script>
+    function sub(){
+        let fn= document.getElementById("fname").value;
+        let ln= document.getElementById("lname").value;
+        let em= document.getElementById("email").value;
+        let ps= document.getElementById("pass").value;
+        let cps= document.getElementById("con-pass").value;
+    
+  if(fn,ln,em,ps,cps){
+        document.getElementById("dfname").innerHTML=fn;
+        document.getElementById("dlname").innerHTML=ln;
+        document.getElementById("demail").innerHTML=em;
+        document.getElementById("dpass").innerHTML=ps;
+        document.getElementById("dcon-pass").innerHTML=cps;
+
+  }
+  else{
+    alert("Please enter full detail")
+  }
+    }
+
+</script>
+</html>

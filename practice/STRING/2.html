@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    //string in javascript
+    let name = 'aman';
+    // alert(name)
+    document.write("first letter of name "+name+" is "+name[0]+"<br>");
+    
+    //template literals (`` is called backtick)
+    let a = 'aman'
+    let b = 'anas'
+    let c = 'ahad'
+    let boy = `${a} , ${b} and ${c} are Brothers`+"<br>"
+    document.write(boy)
+    
+    //escape sequence character
+    let fname = "Shah\'jahan"
+     let vill = "Fateh\npur"
+     let post = "Chand\tauti"
+     let ps= 'Bela\rganj'
+     document.write(name+"<br>")
+    document.write(fname+"<br>") // \ function
+    document.write(vill+"<br>") // \n function
+    document.write(post+"<br>") // \t function
+    document.write(ps+"<br>") // \r function
+    document.write(fname.length+"<br>") //length fuction
+    document.write(fname.toUpperCase()+"<br>") //upper case function
+    document.write(fname.toLocaleLowerCase() +"<br>") //lower case function
+    document.write(fname.slice(0,4) +"<br>")//slice funct
+    document.write(name.replace("am", "Ad") +"<br>") //replace function
+    document.write(a.concat(" is a brother of " , b," and "+c) +"<br>") //add string function
+    
+    let friend = "     ali   ";
+    document.write(friend.trim()) //remove spaces in  string
+</script>
+</html>

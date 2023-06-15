@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    const num = [1,2,3,4];
+
+    for(let i=0;i<num.length;i++){    //simple array method
+        document.write(num[i]);
+        
+    
+    }
+    document.write("<br>");
+    for(let i=0;i<num.length;i++){   //toString method
+        document.write(num[i].toString());
+        
+    }
+    document.write("<br>");  //join method
+        let c=num.join("+")
+        document.write(c +"<br>");
+    document.write(num.push(5)+" is push <br>",num+" is final return value<br>"); //push method
+    
+    document.write(num.pop()+" is pop <br>",num+" is final return value<br>"); //pop method 
+
+    document.write(num.shift()+" is shift <br>",num+" is final return value<br>"); //shift method removes original array
+     
+    document.write(num.unshift(3)+" is new array length<br>",num+" is final return value<br<")
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loops</title>
+</head>
+<body>
+    <style>
+        .main-out{
+            width: 230px;
+        }
+        #output{
+            width: 230px; 
+            height: 100px; 
+            background-color: aliceblue;
+             margin-top: 50px;
+             text-align: center;
+             overflow: scroll;
+            
+        }
+    </style>
+    <input type="number" id="num" placeholder="enter number">
+    <br>
+    <input type="text" id="l-text" placeholder="enter text">
+    <br><br>
+    <button onclick="sub()" id="sub">Submit</button>
+    <div class="main-out">
+        <br>
+    <!-- <hr> -->
+    <div id="output">
+
+    </div>
+    <!-- <hr> -->
+    </div>
+</body>
+<script type="text/javascript">
+function sub(){
+    let output = document.getElementById("output");
+    let b= parseInt(document.getElementById("num").value);
+    let a = document.getElementById("l-text").value;
+
+
+    for (let i = 0; i <b; i++) {
+        let H1 = document.createElement("H1");
+        let br = document.createElement("br");
+        H1.innerText = a;
+        output.appendChild(H1);     
+        output.appendChild(br);     
+
+}
+}
+</script>
+</html>

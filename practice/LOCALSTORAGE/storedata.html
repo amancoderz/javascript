@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Data</title>
+</head>
+<style>
+.main{
+    width: 500px;
+    height: 400px;
+    border: 1.5px solid rgb(15, 175, 90);
+    border-radius: 3px;
+    
+}
+#txt{
+    width: 495px;
+    height: 150px;
+    border: none;
+    background-color: aliceblue;
+}
+#sub{
+    width: 100px;
+    height: 25px;
+    border: 1px;
+    border-radius: 3px;
+    background-color: rgb(8, 203, 138);
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
+.disp{
+    width: 500px;
+    height: 150px;
+    background-color: aquamarine;
+    margin-top: 67px;
+}
+</style>
+<body>
+    <div class="main">
+    <textarea type="text" id="txt" placeholder="enter some text"></textarea>
+    <br>
+    <button onclick="disp()" id="sub">Submit</button>
+    <div class="disp">
+
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color: darkgreen;
+    }
+    .time{
+        height: 100px;
+        width: 300px;
+        border: 1px solid;
+        color: darkorange;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+    
+ */
+    } */
+    h1,.time{
+        margin: auto;
+        margin-top: 100px;
+    }
+   
+
+</style>
+<body>
+    <h1>--clock--</h1>
+    <div class="time">
+        <!-- <div class="t"></div> -->
+    </div>
+    
+</body>
+<script>
+   function disp(){
+    var a = new Date();
+    var hr = a.getHours();
+    var min = a.getMinutes();
+    var sec = a.getSeconds();
+
+    var time= hr + " : " + min + " : " + sec;
+    document.getElementsByClassName("time")[0].innerText=time;
+    setTimeout(disp, 1000)
+   }
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+     <select id="case", name="car">
+        <option value="bmw">BMW</option>
+        <option value="audi">AUDI</option>
+        <option value="merc">MERCEDESE</option>
+     </select>
+     <button onclick="sub()">CLICK</button>
+     <br><br>
+    <p id="demo"></p>
+</body>
+<script type="text/javascript">
+    function sub(){
+let car=document.getElementById("case").value;
+let val,i;
+ switch(car){
+    case 'bmw':
+        val =  "Bmw is my crush car";
+        break;
+    case 'audi':
+        val = "Audi is luxurious car";
+        break;
+    case 'merc':
+        val = "mercedese is expensive car";
+        break;        
+ }
+ document.getElementById("demo").innerHTML= val;
+}
+</script>
+</html>

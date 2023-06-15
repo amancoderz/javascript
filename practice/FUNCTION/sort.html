@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting algorithm with low level</title>
+</head>
+<style>
+    .out{
+        width: 150px;
+        height: 200px;
+        overflow: scroll;
+        border: 1px solid black;
+        position: absolute;
+        bottom: 350px;
+        left: 200px;
+    }
+</style>
+<body>
+    <div class="main">
+      
+        <div class="out">
+
+        </div>
+        
+        <br><br>
+        <button onclick="sort()">sort</button>
+    </div>
+    
+</body>
+<script>
+    
+    let compare=(a,b)=>{
+      return a-b;
+    }
+let sort = ()=>{
+    
+    let num= ["aman","ahads","ali","ajharw"]
+    let size = num[1].length;
+    alert(size[1])
+    // num.sort(compare);
+    // document.getElementsByClassName("out")[0].innerText=num;
+
+
+}
+</script>
+
+</html>
